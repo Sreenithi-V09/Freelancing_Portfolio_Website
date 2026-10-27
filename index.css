@@ -1,0 +1,105 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-main: #0B0B12;
+    --bg-secondary: #12121D;
+    --bg-card: #171725;
+    --accent-primary: #A78BFA;
+    --accent-highlight: #8B5CF6;
+    --text-main: #F5F3FF;
+    --text-muted: #AAA7BD;
+    --border-subtle: #232236;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    background-color: #0B0B12;
+    color: #F5F3FF;
+    overflow-x: hidden;
+  }
+
+  code, kbd, samp, pre {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0B0B12;
+}
+::-webkit-scrollbar-thumb {
+  background: #252438;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3B3859;
+}
+
+/* Background Effects & Dot Grid */
+.bg-grid-dots {
+  background-image: radial-gradient(rgba(167, 139, 250, 0.09) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+/* Ambient Floating Glow Animations */
+@keyframes ambient-float-1 {
+  0%, 100% {
+    transform: translate(0, 0) scale(1);
+    opacity: 0.14;
+  }
+  50% {
+    transform: translate(35px, -25px) scale(1.08);
+    opacity: 0.22;
+  }
+}
+
+@keyframes ambient-float-2 {
+  0%, 100% {
+    transform: translate(0, 0) scale(1);
+    opacity: 0.12;
+  }
+  50% {
+    transform: translate(-30px, 30px) scale(0.95);
+    opacity: 0.18;
+  }
+}
+
+@keyframes ambient-float-3 {
+  0%, 100% {
+    transform: translate(0, 0) scale(1);
+    opacity: 0.10;
+  }
+  50% {
+    transform: translate(25px, 25px) scale(1.05);
+    opacity: 0.16;
+  }
+}
+
+.animate-ambient-1 {
+  animation: ambient-float-1 18s ease-in-out infinite;
+  will-change: transform, opacity;
+}
+
+.animate-ambient-2 {
+  animation: ambient-float-2 22s ease-in-out infinite;
+  will-change: transform, opacity;
+}
+
+.animate-ambient-3 {
+  animation: ambient-float-3 20s ease-in-out infinite;
+  will-change: transform, opacity;
+}
+
+/* Custom glow and focus */
+.glow-purple-sm {
+  box-shadow: 0 0 25px -5px rgba(139, 92, 246, 0.15);
+}
+
+.glow-purple-md {
+  box-shadow: 0 0 35px -5px rgba(139, 92, 246, 0.25);
+}

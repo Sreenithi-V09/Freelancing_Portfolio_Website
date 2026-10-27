@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sreenithi V — Freelance Web Developer Portfolio</title>
+  <meta name="description" content="Modern, responsive, and thoughtfully designed websites for small businesses, startups, and individuals by Sreenithi V.">
+  
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Sreenithi V. — Freelance Web Developer Portfolio">
+  <meta property="og:description" content="Modern, responsive, and thoughtfully designed websites for small businesses, startups, and individuals by Sreenithi V.">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%230B0B12'/><rect x='4' y='4' width='92' height='92' rx='20' fill='%23171725' stroke='%238B5CF6' stroke-width='3'/><text x='50' y='64' font-family='sans-serif' font-size='44' font-weight='800' fill='%23A78BFA' text-anchor='middle'>SV</text></svg>">
+
+  <!-- Web Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Sreenithi V",
+    "jobTitle": "Freelance Web Developer",
+    "email": "sreenithivenkatesan09@gmail.com",
+    "description": "Aspiring freelance web developer creating modern, responsive websites for small businesses, startups, and individuals."
+  }
+  </script>
+</head>
+<body>
+  <!-- Ambient Background Glow, Particles & Dot Grid -->
+  <div class="bg-ambient-layer" aria-hidden="true">
+    <canvas id="particleCanvas" class="bg-particle-canvas"></canvas>
+    <div class="ambient-orb ambient-orb-1"></div>
+    <div class="ambient-orb ambient-orb-2"></div>
+    <div class="ambient-orb ambient-orb-3"></div>
+  </div>
+
+  <!-- 1. NAVIGATION BAR -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="brand" aria-label="Sreenithi V. Home">
+        <span class="brand-monogram">SV</span>
+        <span class="brand-name">Sreenithi V.</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="#hero" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#process" class="nav-link">Process</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="#contact" class="btn btn-primary btn-sm">Start a Project</a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-nav" id="mobileNav" aria-hidden="true">
+      <a href="#hero" class="mobile-nav-link">Home</a>
+      <a href="#about" class="mobile-nav-link">About</a>
+      <a href="#services" class="mobile-nav-link">Services</a>
+      <a href="#projects" class="mobile-nav-link">Projects</a>
+      <a href="#skills" class="mobile-nav-link">Skills</a>
+      <a href="#process" class="mobile-nav-link">Process</a>
+      <a href="#faq" class="mobile-nav-link">FAQ</a>
+      <a href="#contact" class="mobile-nav-link">Contact</a>
+      <a href="#contact" class="btn btn-primary btn-block">Start a Project</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- 2. HERO SECTION -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-meta">
+            <span class="eyebrow">FREELANCE WEB DEVELOPER</span>
+            <span class="meta-dot">·</span>
+            <span class="availability-badge">
+              <span class="badge-dot"></span> Open to freelance projects
+            </span>
+          </div>
+
+          <h1 class="hero-title">
+            Your Ideas Deserve a <span class="text-gradient">Beautiful Website.</span>
+          </h1>
+
+          <p class="hero-description">
+            I'm Sreenithi, a freelance web developer creating modern, responsive websites for small businesses, startups, and individuals. I turn ideas into clear, user-friendly web experiences.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary">Let's Build Your Website &rarr;</a>
+            <a href="#projects" class="btn btn-secondary">Explore My Work</a>
+          </div>
+
+          <div class="hero-trust-list">
+            <div class="trust-item">&check; HTML5, CSS3 & JavaScript</div>
+            <div class="trust-item">&check; 100% Mobile Responsive</div>
+            <div class="trust-item">&check; Direct Communication</div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="mockup-window">
+            <div class="mockup-header">
+              <div class="window-controls">
+                <span class="control-dot red"></span>
+                <span class="control-dot yellow"></span>
+                <span class="control-dot green"></span>
+              </div>
+              <div class="mockup-address">sreenithi.dev/client-preview</div>
+              <span class="mockup-tag">HTML5 / CSS3</span>
+            </div>
+
+            <div class="mockup-body">
+              <div class="mockup-card">
+                <div class="mockup-card-title">Modern Web Presence</div>
+                <div class="mockup-bar long"></div>
+                <div class="mockup-bar short"></div>
+              </div>
+
+              <div class="mockup-columns">
+                <div class="mockup-col">
+                  <strong>Mobile-First</strong>
+                  <p>Tested on smartphones, tablets & desktops</p>
+                </div>
+                <div class="mockup-col">
+                  <strong>Zero Bloat</strong>
+                  <p>Fast-loading, lightweight semantic code</p>
+                </div>
+              </div>
+
+              <div class="mockup-callout">
+                <span>Tailored for your business goals</span>
+                <span class="accent-text">Ready to build</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Feature Strip below Hero -->
+      <div class="container hero-strip">
+        <div class="strip-item">
+          <strong>Semantic HTML5</strong>
+          <p>Clean structure for accessibility & search engines</p>
+        </div>
+        <div class="strip-item">
+          <strong>Responsive Design</strong>
+          <p>Tested across mobile, tablet, and desktop viewports</p>
+        </div>
+        <div class="strip-item">
+          <strong>Clear Communication</strong>
+          <p>Regular updates and honest timeline agreements</p>
+        </div>
+        <div class="strip-item">
+          <strong>Practical Functionality</strong>
+          <p>Purpose-built to help you attract clients & customers</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. ABOUT ME SECTION -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <span class="section-kicker">Background & Values</span>
+          <h2 class="section-title">A Little About Me</h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text reveal-on-scroll">
+            <p class="about-lead">
+              I'm Sreenithi V., an aspiring freelance web developer with an academic background in Computer Science and Business Systems. I enjoy building websites that combine thoughtful design, usability, and practical functionality. I'm continuously improving my skills through hands-on projects and learning how to turn real requirements into useful web experiences.
+            </p>
+            <p>
+              My interest in web development begins with understanding your audience. I approach every project by learning what you want your website to achieve, then crafting responsive layouts with clean HTML, CSS, and JavaScript.
+            </p>
+            <p>
+              Rather than overcomplicating simple projects with heavy tools, I focus on delivering clean code, strong typography, and accessible structures that load quickly and look professional.
+            </p>
+
+            <div class="focus-box">
+              <h3>Currently Focused On:</h3>
+              <div class="focus-grid">
+                <div class="focus-item">
+                  <strong>Frontend Development</strong>
+                  <span>HTML5, CSS3 & JavaScript fundamentals</span>
+                </div>
+                <div class="focus-item">
+                  <strong>Responsive Websites</strong>
+                  <span>Mobile layout & cross-device compatibility</span>
+                </div>
+                <div class="focus-item">
+                  <strong>Personal & Business Websites</strong>
+                  <span>Clean portfolios, landing pages & service sites</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-cards reveal-on-scroll delay-100">
+            <div class="card about-card">
+              <h4>Practical Learning Approach</h4>
+              <p>Writing real code from the ground up to deeply understand core browser behavior and frontend design standards.</p>
+            </div>
+            <div class="card about-card">
+              <h4>Responsive Design & Usability</h4>
+              <p>Ensuring text is legible, buttons are touch-friendly, and layouts adapt smoothly to any screen size.</p>
+            </div>
+            <div class="card about-card">
+              <h4>Clear 1-on-1 Communication</h4>
+              <p>Keeping project discussions easy to understand with upfront milestones and no confusing jargon.</p>
+            </div>
+            <div class="card about-card">
+              <h4>Continuous Improvement</h4>
+              <p>Actively applying constructive feedback, refining code structure, and expanding practical skills.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. SERVICES SECTION -->
+    <section class="section services-section" id="services">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <span class="section-kicker">Services</span>
+          <h2 class="section-title">Websites Built Around Your Goals</h2>
+          <p class="section-subtitle">
+            Thoughtfully crafted website solutions to help you launch, refresh, or expand your presence on the web.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <!-- Service 1 -->
+          <article class="card service-card reveal-on-scroll">
+            <div class="service-badge">Small Businesses</div>
+            <h3 class="service-title">Business Websites</h3>
+            <p class="service-desc">
+              Professional websites that help small businesses explain their services, establish an online presence, and make it easier for customers to get in touch.
+            </p>
+            <div class="deliverables-block">
+              <span class="deliverables-title">Deliverables:</span>
+              <ul class="deliverables-list">
+                <li>Home page with brand intro</li>
+                <li>About & services sections</li>
+                <li>Contact info & inquiry layout</li>
+                <li>Responsive mobile layout</li>
+                <li>Basic on-page SEO metadata</li>
+              </ul>
+            </div>
+            <a href="#contact" class="btn btn-outline btn-block">Discuss Your Project &rarr;</a>
+          </article>
+
+          <!-- Service 2 -->
+          <article class="card service-card reveal-on-scroll delay-100">
+            <div class="service-badge">Students & Professionals</div>
+            <h3 class="service-title">Personal Portfolio Websites</h3>
+            <p class="service-desc">
+              Clean, personalized websites that help students, job seekers, freelancers, and professionals present their work, skills, and experience.
+            </p>
+            <div class="deliverables-block">
+              <span class="deliverables-title">Deliverables:</span>
+              <ul class="deliverables-list">
+                <li>Personal introduction & bio</li>
+                <li>Skills and projects gallery</li>
+                <li>Resume & profile links</li>
+                <li>Contact & inquiry section</li>
+                <li>Mobile-friendly layout</li>
+              </ul>
+            </div>
+            <a href="#contact" class="btn btn-outline btn-block">Discuss Your Project &rarr;</a>
+          </article>
+
+          <!-- Service 3 -->
+          <article class="card service-card reveal-on-scroll delay-200">
+            <div class="service-badge">Campaigns & Products</div>
+            <h3 class="service-title">Landing Pages</h3>
+            <p class="service-desc">
+              Focused, attractive landing pages that communicate a product, service, or offer clearly and guide visitors toward a specific action.
+            </p>
+            <div class="deliverables-block">
+              <span class="deliverables-title">Deliverables:</span>
+              <ul class="deliverables-list">
+                <li>Hero & value proposition</li>
+                <li>Features or benefits section</li>
+                <li>Clear call-to-action triggers</li>
+                <li>Mobile responsive layout</li>
+                <li>Metadata & performance optimization</li>
+              </ul>
+            </div>
+            <a href="#contact" class="btn btn-outline btn-block">Discuss Your Project &rarr;</a>
+          </article>
+        </div>
+
+        <div class="scope-note reveal-on-scroll">
+          <strong>Scope Clarity:</strong> Core packages include front-end HTML/CSS/JS delivery. Third-party automation, backend databases, or dynamic server-side applications can be planned and integrated based on your custom requirements.
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. FEATURED PROJECTS SECTION -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <span class="section-kicker">Portfolio</span>
+          <h2 class="section-title">Selected Projects</h2>
+          <p class="section-subtitle">
+            A selection of projects that reflect my learning, problem-solving approach, and interest in practical web development.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <article class="card project-card reveal-on-scroll">
+            <div class="project-mockup cyber-mockup">
+              <div class="mockup-top-bar">
+                <span>SEC-DASHBOARD</span>
+                <span class="badge-mini">MySQL</span>
+              </div>
+              <div class="mockup-inner-stat">
+                <span class="label">Attack Prediction</span>
+                <span class="val text-accent">DDoS Anomaly: 88%</span>
+              </div>
+              <div class="mockup-inner-sub">Threat Data Presentation</div>
+            </div>
+
+            <div class="project-content">
+              <div class="project-meta">
+                <span>Cybersecurity / Web Application</span>
+              </div>
+              <h3 class="project-title">Cyber Attack Prediction Application</h3>
+              <p class="project-desc">
+                A project focused on presenting cyber attack prediction information through a web-based interface.
+              </p>
+              <div class="tech-tags">
+                <span>HTML</span> · <span>CSS</span> · <span>JavaScript</span> · <span>MySQL</span>
+              </div>
+              <ul class="feature-checklist">
+                <li>User authentication interface</li>
+                <li>Dashboard for displaying prediction information</li>
+                <li>Security-related data presentation</li>
+                <li>Status indicators & prediction severity</li>
+              </ul>
+              <div class="project-actions">
+                <a href="#contact" class="btn btn-primary btn-sm">Request Details</a>
+                <a href="https://github.com/sreenithi-v" target="_blank" rel="noreferrer" class="btn btn-outline btn-sm">GitHub &nearr;</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="card project-card reveal-on-scroll delay-100">
+            <div class="project-mockup chatbot-mockup">
+              <div class="mockup-top-bar">
+                <span>Medical Info Assistant</span>
+                <span class="badge-mini">Python</span>
+              </div>
+              <div class="chat-bubble user">What is recommended daily hydration?</div>
+              <div class="chat-bubble bot">General guidelines recommend ~2.7L for women and ~3.7L for men...</div>
+            </div>
+
+            <div class="project-content">
+              <div class="project-meta">
+                <span>AI / Chatbot Interface</span>
+              </div>
+              <h3 class="project-title">Medical Chatbot Interface</h3>
+              <p class="project-desc">
+                A medical information chatbot project designed to demonstrate conversational interaction and a user-friendly interface.
+              </p>
+              <div class="tech-tags">
+                <span>Python</span> · <span>AI Integration</span> · <span>HTML</span> · <span>CSS</span>
+              </div>
+              <ul class="feature-checklist">
+                <li>Responsive chat interface</li>
+                <li>User message and response bubble display</li>
+                <li>Conversational layout</li>
+                <li>AI prompt integration</li>
+              </ul>
+              <div class="project-actions">
+                <a href="#contact" class="btn btn-primary btn-sm">Request Details</a>
+                <a href="https://github.com/sreenithi-v" target="_blank" rel="noreferrer" class="btn btn-outline btn-sm">GitHub &nearr;</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="card project-card reveal-on-scroll delay-200">
+            <div class="project-mockup web-mockup">
+              <div class="mockup-top-bar">
+                <span>Personal Portfolio</span>
+                <span class="badge-mini">HTML5</span>
+              </div>
+              <div class="web-preview-box">
+                <div class="web-hero-title">Your Ideas Deserve a Beautiful Website</div>
+                <div class="web-btn-pill">Explore Work</div>
+              </div>
+            </div>
+
+            <div class="project-content">
+              <div class="project-meta">
+                <span>Frontend Development</span>
+              </div>
+              <h3 class="project-title">Personal Portfolio Website</h3>
+              <p class="project-desc">
+                A personal website that introduces the developer, showcases selected work, explains services, and provides contact options.
+              </p>
+              <div class="tech-tags">
+                <span>HTML5</span> · <span>CSS3</span> · <span>JavaScript</span>
+              </div>
+              <ul class="feature-checklist">
+                <li>Responsive navigation with mobile drawer</li>
+                <li>Project gallery with feature highlights</li>
+                <li>Services section with clear deliverables</li>
+                <li>Accessible contact inquiry form</li>
+              </ul>
+              <div class="project-actions">
+                <a href="#hero" class="btn btn-primary btn-sm">View Live Page</a>
+                <a href="https://github.com/sreenithi-v" target="_blank" rel="noreferrer" class="btn btn-outline btn-sm">GitHub &nearr;</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. SKILLS & TECHNOLOGIES -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <span class="section-kicker">Technologies</span>
+          <h2 class="section-title">Tools I Work With</h2>
+          <p class="section-subtitle">
+            An honest representation of core technologies and programming languages I actively use.
+          </p>
+        </div>
+
+        <div class="skills-wrapper reveal-on-scroll">
+          <div class="skill-category">
+            <h3 class="skill-cat-title">Frontend Core</h3>
+            <div class="skills-grid">
+              <div class="card skill-card">
+                <strong>HTML5</strong>
+                <p>Semantic markup, accessible page structure, and search engine friendly architecture.</p>
+              </div>
+              <div class="card skill-card">
+                <strong>CSS3</strong>
+                <p>Flexbox, CSS Grid layouts, media queries, and clean visual styling.</p>
+              </div>
+              <div class="card skill-card">
+                <strong>JavaScript</strong>
+                <p>DOM manipulation, form validation, event handling, and interactive features.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h3 class="skill-cat-title">Programming & Databases</h3>
+            <div class="skills-grid">
+              <div class="card skill-card">
+                <strong>Java</strong>
+                <p>Object-oriented foundations and algorithms.</p>
+              </div>
+              <div class="card skill-card">
+                <strong>C & C++</strong>
+                <p>Foundational logic, structures & memory concepts.</p>
+              </div>
+              <div class="card skill-card">
+                <strong>MySQL</strong>
+                <p>Relational queries, schema design & table relations.</p>
+              </div>
+              <div class="card skill-card">
+                <strong>Python & Flask</strong>
+                <p>Backend routing and AI integration basics.</p>
+              </div>
+              <div class="card skill-card">
+                <strong>Git & GitHub</strong>
+                <p>Version control and static website hosting.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. WORK PROCESS -->
+    <section class="section process-section" id="process">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <span class="section-kicker">Collaboration</span>
+          <h2 class="section-title">From Idea to Website</h2>
+          <p class="section-subtitle">
+            A clear 5-step process so you always know what to expect at every stage.
+          </p>
+        </div>
+
+        <div class="process-grid reveal-on-scroll">
+          <div class="card process-card">
+            <div class="step-num">01</div>
+            <h3 class="step-title">Discover</h3>
+            <p>Understand the client's business, audience, goals, content, and requirements.</p>
+          </div>
+          <div class="card process-card">
+            <div class="step-num">02</div>
+            <h3 class="step-title">Plan</h3>
+            <p>Organize the pages, structure, content, and visual direction.</p>
+          </div>
+          <div class="card process-card">
+            <div class="step-num">03</div>
+            <h3 class="step-title">Design & Develop</h3>
+            <p>Build the website with responsive layouts, consistent styling, and functional interactions.</p>
+          </div>
+          <div class="card process-card">
+            <div class="step-num">04</div>
+            <h3 class="step-title">Test & Refine</h3>
+            <p>Check mobile layouts, navigation, form validation, readability, accessibility, and browser behavior.</p>
+          </div>
+          <div class="card process-card">
+            <div class="step-num">05</div>
+            <h3 class="step-title">Launch</h3>
+            <p>Help deploy the finished website and explain how to maintain or update it.</p>
+          </div>
+        </div>
+
+        <div class="scope-note reveal-on-scroll">
+          <strong>Agreed Before Work Begins:</strong> Project scope, delivery timelines, hosting options, and any associated costs are agreed upon before starting.
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. WHY WORK WITH ME -->
+    <section class="section why-section" id="why-work-with-me">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <span class="section-kicker">Core Values</span>
+          <h2 class="section-title">A Thoughtful Approach to Every Project</h2>
+        </div>
+
+        <div class="why-grid reveal-on-scroll">
+          <div class="card why-card">
+            <h3>Client-Focused</h3>
+            <p>Understand requirements before choosing a solution. I focus on what makes your specific website functional and easy to use.</p>
+          </div>
+          <div class="card why-card">
+            <h3>Responsive by Design</h3>
+            <p>Build layouts for phones, tablets, and desktops so that every visitor receives a consistent, polished experience.</p>
+          </div>
+          <div class="card why-card">
+            <h3>Clear Communication</h3>
+            <p>Keep project discussions and expectations understandable with open milestones and rapid responses.</p>
+          </div>
+          <div class="card why-card">
+            <h3>Continuous Improvement</h3>
+            <p>Learn from feedback, apply quality standards, and refine the final result until it meets your expectations.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. FREQUENTLY ASKED QUESTIONS -->
+    <section class="section faq-section" id="faq">
+      <div class="container faq-container">
+        <div class="section-header reveal-on-scroll">
+          <span class="section-kicker">FAQ</span>
+          <h2 class="section-title">Frequently Asked Questions</h2>
+        </div>
+
+        <div class="faq-list reveal-on-scroll">
+          <div class="faq-item">
+            <button class="faq-toggle" aria-expanded="true">
+              <span>What types of websites can you build?</span>
+              <span class="faq-icon">&plus;</span>
+            </button>
+            <div class="faq-content open">
+              <p>I focus on business websites, personal portfolios, and landing pages using HTML, CSS, and JavaScript.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-toggle" aria-expanded="false">
+              <span>Will my website work on mobile devices?</span>
+              <span class="faq-icon">&plus;</span>
+            </button>
+            <div class="faq-content">
+              <p>The goal is to make each website responsive and usable across common screen sizes, with testing before delivery.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-toggle" aria-expanded="false">
+              <span>Can you redesign my existing website?</span>
+              <span class="faq-icon">&plus;</span>
+            </button>
+            <div class="faq-content">
+              <p>I can discuss the current website, your requirements, and whether the requested changes fit my skills and project scope.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-toggle" aria-expanded="false">
+              <span>How much does a website cost?</span>
+              <span class="faq-icon">&plus;</span>
+            </button>
+            <div class="faq-content">
+              <p>Pricing depends on the number of pages, design requirements, functionality, and delivery scope. I will discuss requirements and agree on a quote before starting.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-toggle" aria-expanded="false">
+              <span>How long does a project take?</span>
+              <span class="faq-icon">&plus;</span>
+            </button>
+            <div class="faq-content">
+              <p>The timeline depends on complexity, content availability, and requested features. A specific timeline will be agreed upon after discussing the project.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-toggle" aria-expanded="false">
+              <span>Can you add forms or backend features?</span>
+              <span class="faq-icon">&plus;</span>
+            </button>
+            <div class="faq-content">
+              <p>Basic frontend forms can be created with validation. Delivering messages, storing information, authentication, or other server-side functions may require a backend or an external service.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10. CONTACT SECTION -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <span class="section-kicker">Get In Touch</span>
+          <h2 class="section-title">Have a Website Idea? Let's Talk.</h2>
+          <p class="section-subtitle">
+            Tell me a little about your project, and let's explore how I can help you build a professional online presence.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info reveal-on-scroll">
+            <div class="card info-card">
+              <h3>Direct Channels</h3>
+              <p>You can reach me directly through any of these verified channels:</p>
+
+              <div class="channel-links">
+                <a href="mailto:sreenithivenkatesan09@gmail.com" class="channel-item">
+                  <strong>Email:</strong>
+                  <span>sreenithivenkatesan09@gmail.com</span>
+                </a>
+                <a href="https://www.linkedin.com/in/sreenithi-v-7a24692a4/" target="_blank" rel="noreferrer" class="channel-item">
+                  <strong>LinkedIn:</strong>
+                  <span>linkedin.com/in/sreenithi-v-7a24692a4 &nearr;</span>
+                </a>
+                <a href="https://github.com/Sreenithi-V09" target="_blank" rel="noreferrer" class="channel-item">
+                  <strong>GitHub:</strong>
+                  <span>github.com/Sreenithi-V09 &nearr;</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form-wrapper reveal-on-scroll delay-100">
+            <div class="card form-card">
+              <h3>Project Inquiry Form</h3>
+              <p class="form-desc">Fill out this quick briefing to initiate our project discussion.</p>
+
+              <form id="inquiryForm" novalidate>
+                <div class="form-group">
+                  <label for="fullName">Full Name <span class="req">*</span></label>
+                  <input type="text" id="fullName" name="fullName" placeholder="Your name" required>
+                  <span class="field-error" id="nameError"></span>
+                </div>
+
+                <div class="form-group">
+                  <label for="email">Email Address <span class="req">*</span></label>
+                  <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                  <span class="field-error" id="emailError"></span>
+                </div>
+
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="projectType">Project Type</label>
+                    <select id="projectType" name="projectType">
+                      <option value="Business Website">Business Website</option>
+                      <option value="Portfolio Website">Portfolio Website</option>
+                      <option value="Landing Page">Landing Page</option>
+                      <option value="Other">Other</option>
+                    </select>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="budget">Budget Range</label>
+                    <select id="budget" name="budget">
+                      <option value="Flexible">Flexible / To be agreed</option>
+                      <option value="Under $250">Under $250</option>
+                      <option value="$250 – $500">$250 – $500</option>
+                      <option value="$500 – $1,000">$500 – $1,000</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="projectDescription">Project Description <span class="req">*</span></label>
+                  <textarea id="projectDescription" name="projectDescription" rows="4" placeholder="Briefly describe what your website needs..." required></textarea>
+                  <span class="field-error" id="descError"></span>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-block">Send Project Inquiry</button>
+              </form>
+
+              <div id="formFeedback" class="form-feedback hidden"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 11. FOOTER -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <div class="footer-logo">SV <strong>Sreenithi V.</strong></div>
+        <div class="footer-title">Freelance Web Developer</div>
+        <p class="footer-tagline">Modern Websites. Thoughtful Design. Real Solutions.</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="#hero">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#process">Process</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="footer-social">
+        <a href="mailto:sreenithivenkatesan09@gmail.com" aria-label="Email">Email</a>
+        <a href="https://www.linkedin.com/in/sreenithi-v-7a24692a4/" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a href="https://github.com/Sreenithi-V09" target="_blank" rel="noreferrer">GitHub</a>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>&copy; <span id="currentYear"></span> Sreenithi V. All rights reserved.</p>
+      <a href="#hero" class="back-to-top">Back to top &uarr;</a>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
